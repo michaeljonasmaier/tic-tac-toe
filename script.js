@@ -143,7 +143,8 @@ function drawWinningLine(combination) {
     
     // Setze die Linie: Länge, Drehung und Position
     line.style.width = `${length}px`;
-    line.style.height = '5px'; // Dicke der Linie
+    line.style.height = '7px'; // Dicke der Linie
+    line.style.borderRadius = "10px";
     line.style.transform = `rotate(${angle}rad)`; // Drehen der Linie
     line.style.transformOrigin = '0 50%'; // Ursprung der Drehung an der linken Seite
     line.style.left = `${start.x}px`;
