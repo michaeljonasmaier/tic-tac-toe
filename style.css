@@ -46,3 +46,23 @@ tr:not(:last-child) td { /* Zeilenlinien */
 .content{
     position: relative;
 }
+
+/* Grundstil für den Button */
+.restart-btn {
+    padding: 10px 20px;
+    background-color: #FFC000;
+    color: white;
+    border: 2px solid #FFC000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover-Effekt */
+.restart-btn:hover {
+    background-color: #fccc3d;
+    border-color: #ffffff;
+     /* Button wird leicht nach oben verschoben */
+}
+
