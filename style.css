@@ -1,0 +1,48 @@
+/* Hintergrundfarbe der gesamten Seite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif; /* Schriftart Open Sans */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Zentriert die Tabelle horizontal */
+    align-items: center; /* Zentriert die Tabelle vertikal */
+    height: 100vh;
+    gap: 100px; /* Vollbild-Höhe */
+}
+
+/* Tabelle */
+table {
+    border-collapse: collapse; /* Entfernt doppelte Linien */
+    width: 300px;
+    height: 300px;
+}
+
+/* Zellen */
+td {
+    border: 0; /* Standardmäßig keine Rahmen */
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px; /* Weiße Schrift für X und O */
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.306);
+    cursor: pointer;
+}
+
+/* Trennlinien innerhalb der Tabelle */
+td:not(:last-child) { /* Spaltenlinien */
+    border-right: 5px solid white;
+}
+tr:not(:last-child) td { /* Zeilenlinien */
+    border-bottom: 5px solid white;
+}
+
+.content{
+    position: relative;
+}
